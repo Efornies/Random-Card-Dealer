@@ -1,1 +1,5 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+#background {
+  background-color: green;
+}
