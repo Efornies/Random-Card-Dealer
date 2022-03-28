@@ -3,3 +3,30 @@
 #background {
   background-color: green;
 }
+
+#carta {
+  border-radius: 20px;
+}
+
+#palo {
+  padding-top: 2%;
+  padding-left: 2%;
+}
+
+#numero {
+  display: flex;
+  margin: auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+#palo2 {
+  display: flex;
+  justify-content: end;
+  padding-bottom: 2%;
+  padding-right: 2%;
+}
+
+#botones {
+  padding-top: 2%;
+}
