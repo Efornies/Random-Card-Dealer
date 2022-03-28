@@ -6,7 +6,7 @@ window.onload = function() {
   //write your code here
 };
 
-//Definir
+//Variables
 
 let palos = ["♦", "♥", "♠", "♣"];
 let numeros = [
@@ -24,5 +24,6 @@ let numeros = [
   "Q",
   "K"
 ];
+//Fórmulas
 
-//fórmulas
+const cartas = () => {};
