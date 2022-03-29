@@ -3,28 +3,33 @@ import "bootstrap";
 import "./style.css";
 
 window.onload = function() {
-  //write your code here
-  /*  document.getElementById("palo").innerHTML = cartas(); */
+  /*   start.addEventListener("click", sacarCartas);
+  reset.addEventListener("click", reiniciar); */
 };
 
 //Variables
 
-let palos = ["♦", "♥", "♠", "♣"];
-let numeros = [
-  "A",
-  "2",
-  "3",
-  "4",
-  "5",
-  "6",
-  "7",
-  "8",
-  "9",
-  "10",
-  "J",
-  "Q",
-  "K"
-];
-//Fórmulas
+let palo = ["♦", "♥", "♠", "♣"];
+let numero = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
 
-const cartas = () => {};
+const sacarCartas = () => {
+  for (let palo of numero) {
+    for (let numero of palo) {
+      let num = [palo, n];
+      mezcla.push(num);
+      mezcla.sort(() => Math.random());
+    }
+  }
+  return mezcla;
+};
+
+const reiniciar = () => {
+  for (let palo of numero) {
+    for (let numero of palo) {
+      let num = [palo, numero];
+      mezcla.push(num);
+      mezcla.sort(() => Math.random());
+    }
+  }
+  return mezcla;
+};
