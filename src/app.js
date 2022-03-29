@@ -4,6 +4,7 @@ import "./style.css";
 
 window.onload = function() {
   //write your code here
+  /*  document.getElementById("palo").innerHTML = cartas(); */
 };
 
 //Variables
