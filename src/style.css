@@ -9,7 +9,7 @@
   margin-top: 20px;
 }
 
-.palo1 {
+#palo1 {
   padding-left: 10%;
   font-size: 400%;
 }
@@ -23,7 +23,7 @@
   font-size: 400%;
 }
 
-.palo2 {
+#palo2 {
   display: flex;
   justify-content: end;
   padding-bottom: 2%;

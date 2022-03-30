@@ -4,39 +4,51 @@ import "./style.css";
 
 //Variables
 
-let palo = ["♦", "♥", "♠", "♣"];
-let numero = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+let suits = ["♦", "♥", "♠", "♣"];
+let pokernumbers = [
+  "A",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "10",
+  "J",
+  "Q",
+  "K"
+];
+let corte = [];
+let mezcla = [];
 
-const sacarCartas = () => {
-  for (let palo of numero) {
-    for (let numero of palo) {
-      let num = [palo, numero];
-      corte.push(num);
-      corte.sort(() => Math.random() - 0.5);
-    }
+//Imprimir en carta
+
+const CardPalos = document.querySelectorAll(".palos");
+const CardNumber = document.querySelector("#numero");
+
+//Fórmulas
+
+const getRandomNumber = () => {
+  CardNumber.innerHTML =
+    pokernumbers[Math.floor(Math.random() * pokernumbers.length)];
+};
+
+const getRandomPalo = () => {
+  const CardPalo = suits[Math.floor(Math.random() * suits.length)];
+  for (let palo = 0; palo < CardPalo.length; palo++) {
+    CardPalos[palo].innerHTML = CardPalo;
   }
-  return corte;
 };
 
-const aleatorio = () => {
-  corte.sort(() => Math.random() - 0.5);
-  return corte;
-};
+//Llamámos a la función:
 
-const reiniciar = () => {
-  for (let palo of numero) {
-    for (let numero of palo) {
-      let num = [palo, numero];
-      mezcla.push(num);
-      mezcla.sort(() => Math.random() - 0.5);
-    }
-  }
-  return corte;
-};
+//Botones
 
-//PRINT
-
-/* window.onload = function() {
-  nuevaCarta.addEventListener("click", sacarCartas);
-  reiniciar.addEventListener("click", reiniciar);
-}; */
+const miboton = document.querySelector("#start");
+miboton.addEventListener("click", () => {
+  getRandomNumber();
+  getRandomPalo();
+});
+window.onload = () => {};
