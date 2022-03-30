@@ -20,12 +20,11 @@ let pokernumbers = [
   "Q",
   "K"
 ];
-let corte = [];
-let mezcla = [];
 
 //Imprimir en carta
 
-const CardPalos = document.querySelectorAll(".palos");
+const CardPalos = document.querySelectorAll(".palo");
+const CardPalosdos = document.querySelectorAll(".palodos");
 const CardNumber = document.querySelector("#numero");
 
 //Fórmulas
@@ -39,10 +38,9 @@ const getRandomPalo = () => {
   const CardPalo = suits[Math.floor(Math.random() * suits.length)];
   for (let palo = 0; palo < CardPalo.length; palo++) {
     CardPalos[palo].innerHTML = CardPalo;
+    CardPalosdos[palo].innerHTML = CardPalo;
   }
 };
-
-//Llamámos a la función:
 
 //Botones
 

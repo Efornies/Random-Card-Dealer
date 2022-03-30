@@ -1,8 +1,9 @@
 # Random Card Dealer in Javascript, HTML and CSS
 
-- He generado una carta usando bootstrap y editando HTML + CSS
-- He creado dos botones para generar una carta al hacer click y otra para reiniciar la baraja
-- He usado JS para formular las acciones de sacar carta y reiniciar. 
+- He generado una carta usando bootstrap y editando HTML + CSS.
+- He creado dos botones para generar una carta al hacer click.
+- He usado JS para formular las acciones de sacar carta.
+- DOM para llamar los elementos del HTML y hacerlos funcionar.
 
 
 ### Manual de Instalación para comenzar:
